@@ -1,0 +1,25 @@
+:root {
+    font-size: 62.5%;
+    --black: #09090b;
+    --white: #fafafa;
+    --short-transition: 100ms;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button, a, textarea {
+    color: inherit;
+    font-family: inherit;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.4rem;
+    background: var(--black);
+    color: var(--white);
+}

@@ -1,0 +1,156 @@
+.navbar {
+    display: flex;
+    padding-inline: 2rem;
+    position: relative;
+    min-height: 6.4rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black);
+}
+
+.navbar > ul {
+    background: var(--black);
+    list-style-type: none;
+    position: fixed;
+    top: 6.4rem;
+    left: 0;
+    width: 100%;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.6rem;
+}
+
+.navbar > ul > li {
+    display: block;
+    width: 100%;
+}
+
+.navbar > ul > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+    min-height: 5.6rem;
+    padding-inline: 2rem;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    justify-content: space-between;
+}
+
+.navbar > ul > li:not(:last-child) > a {
+    border-bottom-color: #ffffff33;
+}
+
+.navbar > a {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar > label > span {
+    display: block;
+    background: var(--white);
+    width: 2.4rem;
+    height: .1rem;
+    transition-property: background-color;
+    transition-duration: var(--short-transition);
+}
+
+.navbar > label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff12;
+    min-height: 4.8rem;
+    min-width: 4.8rem;
+    border-radius: 99rem;
+    transition-property: background-color;
+    transition-duration: var(--short-transition);
+}
+
+.navbar > label > span:nth-child(2){
+    margin-block: .30rem;
+}
+
+.navbar > input[type='checkbox'] {
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.navbar > input[type='checkbox']:checked ~ label {
+    background-color: var(--white);
+}
+
+.navbar > input[type='checkbox']:checked ~ label > span {
+    background-color: var(--black);
+}
+
+.navbar > input[type='checkbox']:checked ~ label > span:nth-child(1) {
+    transform: rotate(45deg) translateY(1px);
+}
+
+.navbar > input[type='checkbox']:checked ~ label > span:nth-child(2) {
+    visibility: hidden;
+    margin: 0;
+}
+
+.navbar > input[type='checkbox']:checked ~ label > span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-1px);
+}
+
+.navbar > ul {
+    background: white;
+    transition: background-color 300ms, visibility 300ms;
+    visibility: hidden;
+}
+
+.navbar > input[type='checkbox']:checked ~ ul {
+    visibility: visible;
+    background: var(--black);
+}
+
+@media screen and (min-width: 1023px) {
+    .navbar {
+        min-height: 3.2rem;
+        padding-inline: 19.8rem;
+    }
+
+    .navbar > ul {
+        visibility: visible;
+        position: relative;
+        flex-direction: row;
+        top: 0;
+        background: transparent;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .navbar > ul > li {
+        min-width: fit-content;
+        max-width: fit-content;
+    }
+
+    .navbar > ul > li > a {
+        font-size: 1.3rem;
+        border: none;
+        color: #ffffffa9;
+        transition: color 200ms;
+        min-height: 4.6rem;
+    }
+
+    .navbar > ul > li > a:hover {
+        color: #ffffff;
+    }
+
+    .navbar > ul > li > a > svg {
+        display: none;
+    }
+
+    .navbar > label, .navbar > input[type='checkbox'] {
+        display: none;
+    }
+}
