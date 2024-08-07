@@ -46,6 +46,7 @@
 .navbar > a {
     font-size: 2rem;
     font-weight: 600;
+    color: white;
 }
 
 .navbar > label > span {
@@ -115,7 +116,6 @@
 
 @media screen and (min-width: 1023px) {
     .navbar {
-        min-height: 3.2rem;
         padding-inline: 19.8rem;
     }
 

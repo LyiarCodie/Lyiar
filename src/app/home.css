@@ -1,0 +1,50 @@
+.home {
+    min-height: calc(100vh - 6.4rem);
+    background: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+    background-image: url("https://images.pexels.com/photos/4947573/pexels-photo-4947573.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    margin-block: auto;
+    text-shadow: 0 .1rem .4rem #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message h3 {
+    display: flex;
+    gap: .4rem;
+    margin-top: .8rem;
+}
+
+.message a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: .8rem;
+    transition-duration: var(--short-transition);
+}
+
+.message a:hover {
+    color: #10b981;
+}
+
+
+.picture-informations {
+    margin-block: 2rem;
+    text-shadow: 0 .1rem .4rem #000000;
+}
+
+.picture-informations a {
+    padding: .4rem .8rem;
+}

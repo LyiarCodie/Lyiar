@@ -23,3 +23,13 @@ body {
     background: var(--black);
     color: var(--white);
 }
+
+a {
+    font-weight: 600;
+    color: #10b981;
+    transition-duration: var(--short-transition);
+}
+
+a:hover{
+    color: #059669;
+}

@@ -21,8 +21,7 @@ const Navbar: FC = () => {
 
         <ul className='navbarMenu'>
             <NavLink href='/'>Game Development</NavLink>
-            <NavLink href='/'>Pixel Art</NavLink>
-            <NavLink href='/'>Songs</NavLink>
+            <NavLink href='/'>Web Development</NavLink>
         </ul>
     </nav>
   )
